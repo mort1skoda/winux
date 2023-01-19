@@ -33,7 +33,6 @@ doskey   gp=git push
 doskey   gr=git remote -v
 doskey   gs=git status
 doskey ,egi=gvim %HOME%\.gitignore
-
 ::-------------------------}}}
 
 ::--- alias show all my aliases ----------{{{
