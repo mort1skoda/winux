@@ -1,3 +1,5 @@
 [user]
 	email = mort1skoda@gmail.com
 	name = mort1skoda
+[credential]
+	helper = manager
