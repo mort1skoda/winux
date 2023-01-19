@@ -1,0 +1,2 @@
+%VIM% or $VIM    =   
+C:\winix\bin\vim
