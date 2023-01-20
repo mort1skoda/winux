@@ -21,7 +21,7 @@ alias q='exit'
 
 #### aliases for git ##############################{{{
 alias g0s='git pull'
-alias g1s='git status && git remote -v'
+alias g1s='git status && git remote -v && ag git'
 alias g2a='git add '
 alias g3s='git status && ag git'
 
