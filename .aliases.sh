@@ -11,6 +11,10 @@ alias sb='source .bashrc'
 alias sp='source .bash_profile'
 alias ,ea='gvim .aliases.sh &'
 
+alias g='grep -i --color '
+alias ag='alias | grep -i --color '
+
+
 alias q='exit'
 #####################################################}}}
 
