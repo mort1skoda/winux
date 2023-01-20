@@ -30,7 +30,7 @@ echo "DateString \$DATE for git commit -m:" $DATE
 echo $DATE
 alias g4c='git commit -m "$DATE" '
 
-alias g5s='g1s'
+alias g5s='git status && git remote -v'
 alias g6p='git push'
 
 alias ,gi='gvim .gitignore &'
