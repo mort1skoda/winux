@@ -22,6 +22,10 @@ echom "2. source: " . $HOME . "\\vimfiles\\.vimrc"
 "------------------------------------------------------------}}}
 
 
+" set font for gui gvim.  TODO:maybe it must go into: .gvimrc
+"set gfn='DejaVu_Sans_Mono:h9:cANSI:qDRAFT'
+set gfn=Consolas:h9:cANSI:qDRAFT
+
 let mapleader = ","
 nnoremap <Leader>ev :vs<cr>:edit $HOME/vimfiles/.vimrc<cr>
 
