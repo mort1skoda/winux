@@ -42,7 +42,7 @@ doskey ,egi=gvim %HOME%\.gitignore
 
 :: git step by step:
 doskey g0 = git pull
-doskey g1 = git status
+doskey g1s = git status
 doskey g2 = git remote -v
 doskey g3 = git add $*
 doskey g4 = git status
