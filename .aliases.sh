@@ -14,6 +14,7 @@ alias sa='source .aliases.sh'
 alias sb='source .bashrc'
 alias sp='source .bash_profile'
 alias ,ea='gvim .aliases.sh && source .aliases.sh'
+alias ,ev='gvim vimfiles/.vimrc'
 
 alias g='grep -i --color '
 alias ag='alias | grep -i --color '

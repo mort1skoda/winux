@@ -79,7 +79,7 @@ nnoremap fo zr
 
 
 "--- color ---{{{
-colorscheme desert
+colorscheme molokai 
 filetype on
 filetype plugin on
 filetype indent on
@@ -112,8 +112,9 @@ nnoremap w W
 nnoremap b B
 nnoremap W w
 nnoremap B b
-nnoremap <C-e> 2<C-e>
-nnoremap <C-y> 2<C-y>
+nnoremap <C-e> 2<C-y>
+nnoremap <C-b> 2<C-e>
+
 "-----------------------------------------------}}}
 
 
@@ -131,7 +132,7 @@ nnoremap <Leader>ca 0i"<esc>j
 
 
 "--- normal mode edit ------------------------------------------------------------------{{{
-nnoremap <space> i<space><esc>:echom"N->N space = insert space in normal mode"<cr>
+nnoremap <space> i<space><esc>l:echom"N->N space = insert space in normal mode"<cr>
 nnoremap x x:echo'N->N x = delete char at cursor'<cr>
 nnoremap <tab> i<space><space><space><space><space><esc>:echom"-- NORMAL -- tab = insert 4 spaces"<cr>
 "---------------------------------------------------------------------------------}}}
@@ -170,7 +171,7 @@ nnoremap p p:echom"N->N p=paste after cursor"<cr>
 
 
 "--- esc (mapped to caps lock) -------------------------------------------------------{{{
-nnoremap <esc> :echom"N->N esc = back to normal mode ".$HOME." ".$FILENAME<cr>
+nnoremap <esc> :echom'N->N esc = back to normal mode'<cr>
 inoremap <esc> <esc>l:echo"I->N esc = back to normal from insert mode"<cr>
 cnoremap <esc> <esc>:echo"-- NORMAL --  esc = back to normal from comand mode"<cr>
 vnoremap <esc> <esc>:echo"-- NORMAL --  esc = back to normal from visual mode"<cr>
@@ -180,18 +181,26 @@ vnoremap <esc> <esc>:echo"-- NORMAL --  esc = back to normal from visual mode"<c
 "--- statusline ---{{{
 set laststatus=2
 set statusline=
-set statusline+=%F
+set statusline+=\ %f
+set statusline+=\ %y
 set statusline+=%=
-set statusline+=row:%l\ col:%c\ percent:%p%%
+"set statusline+=\ %{&fileencoding?&fileencoding:&encoding}
+"set statusline+=\[%{&fileformat}\]
+set statusline+=\ %p%%
+set statusline+=\ %l:%c
+set statusline+=\ 
 "------------------}}}
 
 
 "--- save  /  quit --------{{{
 "-TODO: maybe create functions for these compund statments...???
-nnoremap <C-s> :w<cr>:source $HOME/vimfiles/.vimrc<cr>:echom"N->N sav:".expand('%')." - source:\\vimfiles\\\/.vimrc"<cr>
-inoremap <C-s> <esc>:w<cr><esc>:w<cr>l:source $HOME/vimfiles/.vimrc<cr>:echom"I->N sav:".expand('%')." - source:\\vimfiles\\\/.vimrc"<cr>
-cnoremap <C-s> <esc>:w<cr>:source $HOME/vimfiles/.vimrc<cr>:echom"C->N sav:".expand('%')." - source:\\vimfiles\\\/.vimrc"<cr>
-vnoremap <C-s> <esc>:w<cr>:source $HOME/vimfiles/.vimrc<cr>:echom"V->N sav:".expand('%')." - source:\\vimfiles\\\/.vimrc"<cr>
+
+let _FILENAME = expand('%:t')
+
+nnoremap <C-s> :w<cr>:source $HOME/vimfiles/.vimrc<cr>:echo"Nor->Nor saved: " . _FILENAME . " - sourced: ~\\vimfiles\\.vimrc"<cr>
+inoremap <C-s> <esc>:w<cr><esc>:w<cr>l:source $HOME/vimfiles/.vimrc<cr>:echo"Ins->Nor saved: " . _FILENAME . " - sourced: ~\\vimfiles\\.vimrc"<cr>
+cnoremap <C-s> <esc>:w<cr>:source $HOME/vimfiles/.vimrc<cr>:echom"Com->Nor saved: " . _FILENAME . " - sourced: ~\\vimfiles\\.vimrc"<cr>
+vnoremap <C-s> <esc>:w<cr>:source $HOME/vimfiles/.vimrc<cr>:echom"Vis->Nor sav:".expand('%')." - source:\\vimfiles\\\/.vimrc"<cr>
 
 nnoremap q     :q
 nnoremap <C-q> :wq
