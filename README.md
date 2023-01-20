@@ -4,6 +4,15 @@
 * of
 * winux
 
+* Install github-cli for windows:
+* open cmd:  WIN+R cmd 
+* winget install --id GitHub.cli
+* type gh at the command prompt to check.
+---
+* Install git for windows:
+* winget install -e --id Git.Git
+*  
+
 C:\winux>tree
 Folder PATH listing for volume win10
 C:.
