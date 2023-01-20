@@ -23,7 +23,7 @@ alias q='exit'
 alias g0s='git pull'
 alias g1s='git status && git remote -v'
 alias g2a='git add '
-alias g3s='git status'
+alias g3s='git status && ag git'
 
 DATE=$(DATE +"%Y-%m-%d %H:%M:%S")
 echo "DateString \$DATE for git commit -m:" $DATE
