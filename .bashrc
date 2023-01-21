@@ -4,7 +4,9 @@ set -o vi
 
 echo "in: .bashrc"
 
-export VIMRC='~/.vimrc'
+export _WINUX_HOME='c/winux/home/m'
+export _WINUX_VIMFILES='vimfiles'
+export _WINUX_VIMRC='.vimrc'
 
 source .aliases.sh
 

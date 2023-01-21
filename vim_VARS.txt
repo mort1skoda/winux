@@ -1,0 +1,17 @@
+system vimrc file:	$VIM\vimrc	
+			c:\winux\bin\vim\vimrc
+
+user vimrc file:	$HOME\_vimrc
+			c:\winux\home\m\_vimrc
+
+2nd user vimrc file:	$HOME\vimfiles\vimrc
+			c:\winux\home\m\vimfiles\vimrc
+
+3rd user vimrc file:	$VIM\_vimrc
+			c:\winux\bin\vim\_vimrc
+
+
+system gvimrc file:	$VIM\gvimrc
+			c:\winux\bin\vim\gvimrc
+
+user gvimrc file:	$HOME\

@@ -13,8 +13,11 @@ alias v='gvim'
 alias sa='source .aliases.sh'
 alias sb='source .bashrc'
 alias sp='source .bash_profile'
+
+### edit .files with vim ######
 alias ,ea='gvim .aliases.sh && source .aliases.sh'
 alias ,ev='gvim vimfiles/.vimrc'
+alias ,eb='gvim $HOME"/.bashrc"' 
 
 alias g='grep -i --color '
 alias ag='alias | grep -i --color '
