@@ -19,11 +19,14 @@
 * git config list
 * cat .gitconfig:
 
+<pre><code>This is a code block.
+</code></pre>
 
+<pre>
 [user]
     name = Your Name
     email = youremail@yourdomain.com
-
+</pre>
 
 C:\winux>tree
 Folder PATH listing for volume win10
