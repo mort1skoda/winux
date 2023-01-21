@@ -3,3 +3,5 @@
      name = mort1skoda
 
 
+[core]
+	autocrlf = false

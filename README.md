@@ -1,17 +1,29 @@
 ### winux
 
-* Tree structure
-* of
-* winux
+#### Install Git and GitHub.cli
+#### Auth with gh 
+#### git config --global 
 
-* Install github-cli for windows:
-* open cmd:  WIN+R cmd 
+* GitHub.cli for windows:
 * winget install --id GitHub.cli
-* type gh at the command prompt to check.
----
-* Install git for windows:
+* -
+* Git for windows:
 * winget install -e --id Git.Git
-*  
+---
+* Auth:
+* gh auth login
+---
+* CRLF windows CRLF
+* git config --global core.autocrlf false
+* Name and Email
+* git config --global user.name "Your Name"
+* git config --global user.email "yourmail@yourdomain.com"  
+* git config list
+* cat .gitconfig:
+[user]
+    name = Your Name
+    email = youremail@yourdomain.com
+
 
 C:\winux>tree
 Folder PATH listing for volume win10
@@ -71,5 +83,4 @@ C:.
         └───vimfiles
             └───colors
 
-C:\winux>
 

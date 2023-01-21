@@ -1,5 +1,5 @@
 #!/bin/bash
-
+ 
 echo "in: .aliases.sh"
 
 
@@ -8,20 +8,18 @@ alias ..='cd ..'
 alias l='ls -la --color --group-directories-first'
 alias c='cat '
 
+alias sa='source ~/.aliases.sh'
+alias sb='source ~/.bashrc'
+alias sp='source ~/.bash_profile'
 
-alias v='gvim'
-alias sa='source .aliases.sh'
-alias sb='source .bashrc'
-alias sp='source .bash_profile'
-
-### edit .files with vim ######
-alias ,ea='gvim .aliases.sh && source .aliases.sh'
-alias ,ev='gvim vimfiles/.vimrc'
-alias ,eb='gvim $HOME"/.bashrc"' 
+### edit .files with vim ###
+alias ,='gvim'
+alias ,a='gvim .aliases.sh && source ~/.aliases.sh'
+alias ,v='gvim $HOME"/_vimrc"'
+alias ,b='gvim $HOME"/.bashrc"' 
 
 alias g='grep -i --color '
 alias ag='alias | grep -i --color '
-
 
 alias q='exit'
 #####################################################}}}
@@ -42,8 +40,6 @@ alias g5s='git status && git remote -v'
 alias g6p='git push'
 
 alias ,gi='gvim .gitignore &'
-
-
 #######################################}}}
 
 
