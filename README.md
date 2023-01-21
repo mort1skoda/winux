@@ -1,12 +1,11 @@
 ### winux
 
-#### Install Git and GitHub.cli
-#### Auth with gh 
-#### git config --global 
+#### Install Git and GitHub.cli for windows
+#### Auth with gh
+#### git config --global
 
 * GitHub.cli for windows:
 * winget install --id GitHub.cli
-* -
 * Git for windows:
 * winget install -e --id Git.Git
 ---
@@ -15,11 +14,12 @@
 ---
 * CRLF windows CRLF
 * git config --global core.autocrlf false
-* Name and Email
 * git config --global user.name "Your Name"
-* git config --global user.email "yourmail@yourdomain.com"  
+* git config --global user.email "yourmail@yourdomain.com"
 * git config list
 * cat .gitconfig:
+
+
 [user]
     name = Your Name
     email = youremail@yourdomain.com
