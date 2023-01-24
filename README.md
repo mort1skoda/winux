@@ -28,6 +28,7 @@
     email = youremail@yourdomain.com
 </pre>
 
+Check out theese win terminal emulators:
 https://www.puttygen.com/windows-terminal-emulators
 
 
