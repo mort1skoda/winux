@@ -28,6 +28,10 @@
     email = youremail@yourdomain.com
 </pre>
 
+https://www.puttygen.com/windows-terminal-emulators
+
+
+
 C:\winux>tree
 Folder PATH listing for volume win10
 C:.
