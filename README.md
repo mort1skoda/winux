@@ -1,4 +1,6 @@
-### winux
+## winux
+
+### windows programs using a liunx like file organization
 
 #### Install Git and GitHub.cli for windows
 #### Auth with gh
