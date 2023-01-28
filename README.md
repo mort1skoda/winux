@@ -11,8 +11,14 @@
 * Git for windows:
 * winget install -e --id Git.Git
 ---
-* Auth:
-* gh auth login
+<pre>
+Auth:
+gh auth login
+copy one time setup code
+then goto:
+</pre>
+* https://github.com
+
 ---
 * CRLF windows CRLF
 * git config --global core.autocrlf false
